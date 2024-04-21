@@ -1,0 +1,9 @@
+---
+- name: Install Docker Registry
+  hosts: docker_registry
+  become: yes
+  vars:
+    domain_name: docker.myiot.ru
+
+  roles:
+    - docker_registry

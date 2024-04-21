@@ -1,0 +1,4 @@
+---
+# handlers file for docker_registry
+- name: restart nginx
+  service: name=nginx state=restart
