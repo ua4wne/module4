@@ -9,6 +9,7 @@
     - nginx
     - certbot
     - python3-certbot-nginx
+    - apache2-utils
 # - name: Generate SSL sertificate
 #   shell: certbot --nginx -d {{ domain_name }}
 - name: Remove default config nginx
@@ -19,5 +20,4 @@
     dest: /etc/nginx/sites-available/{{ domain_name }}
 - name: Enable nginx
   shell: ln -s /etc/nginx/sites-available/{{ domain_name }} /etc/nginx/sites-enabled/{{ domain_name }}
-  notify: restart nginx
-
+#  notify: restart nginx
