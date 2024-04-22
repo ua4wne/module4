@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"dns_zone","Source":"../../modules/ya_zone","Dir":"../../modules/ya_zone"},{"Key":"network","Source":"../../modules/ya_network","Dir":"../../modules/ya_network"},{"Key":"vm","Source":"../../modules/ya_server","Dir":"../../modules/ya_server"}]}

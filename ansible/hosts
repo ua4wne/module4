@@ -1,2 +1,2 @@
 [docker_registry]
-srv1 ansible_ssh_host=192.168.1.48 ansible_ssh_user=dervish
+srv1 ansible_ssh_host=178.154.223.125 ansible_ssh_user=ubuntu

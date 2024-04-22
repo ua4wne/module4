@@ -1,16 +1,16 @@
 ---
 # tasks file for docker_registry
 - name: Install multiple packages
-    apt:
-      pkg: "{{ item }}"
-      state: present
-    loop:
-      - docker-compose
-      - nginx
-      - certbot
-      - python3-certbot-nginx
-- name: Generate SSL sertificate
-  shell: certbot --nginx -d {{ domain_name }}
+  apt:
+    pkg: "{{ item }}"
+    state: present
+  loop:
+    - docker-compose
+    - nginx
+    - certbot
+    - python3-certbot-nginx
+# - name: Generate SSL sertificate
+#   shell: certbot --nginx -d {{ domain_name }}
 - name: Remove default config nginx
   file: name=/etc/nginx/sites-enabled/default state=absent
 - name: Add virtual host to nginx

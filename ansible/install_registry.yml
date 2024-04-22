@@ -3,7 +3,7 @@
   hosts: docker_registry
   become: yes
   vars:
-    domain_name: docker.myiot.ru
+    domain_name: docker.deviot.ru
 
   roles:
     - docker_registry
